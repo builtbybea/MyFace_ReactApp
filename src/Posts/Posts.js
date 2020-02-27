@@ -25,20 +25,26 @@ function Posts() {
         }
         
         return (
-            <section id="listOfPosts">
+            <ul className="listOfPosts">
                 {posts}
-            </section>
+            </ul>
         );
 }
 
 
 function Post(props) {
     return (
-        <div className="userInfo">
-            <p>{props.data.postedBy.firstName}</p>
-            <img src= {props.data.imageUrl} />
-            <p>{props.data.message}</p>
-            <p>{props.data.postedAt}</p>
+        <div className="userPost">
+            <div className="userInfo">
+                <p>{props.data.postedBy.firstName}</p>
+                <img className="userAvatar" src={props.data.postedBy.profileImageUrl}/>
+            </div>
+            
+            <div className="userMessage">
+                <p>{props.data.message}</p>
+                <img className="postedImg" src= {props.data.imageUrl} />
+                <p>{props.data.postedAt}</p>
+            </div>
         </div>
         
     );
