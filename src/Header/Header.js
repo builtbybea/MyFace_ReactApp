@@ -4,10 +4,9 @@ import './Header.scss';
 function Header() {
     return (
         <header>
-            <nav>
-                <a>MyFace</a>
-                <ul>
-                    
+            <nav id="navContainer">
+                <a className="navLogo">MyFace</a>
+                <ul className="navLinks">
                     <li>
                         <a>Posts</a>
                     </li>

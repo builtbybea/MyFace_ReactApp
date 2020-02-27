@@ -3,9 +3,8 @@ import './Footer.scss';
 
 function Footer() {
     return (
-        <footer>
-            <div className="container">&copy; 2020 - MyFace <a href={""}>Privacy</a>
-            </div>
+        <footer id="footerContainer">
+            <div className="footerInfo">&copy; 2020 - MyFace</div> <div className="footerLink" ><a href={""}>Privacy</a></div>
         </footer>
     );
 

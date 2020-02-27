@@ -1,1 +1,28 @@
-﻿
+﻿@import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
+
+#navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background: darkgrey;
+  color: white;
+}
+
+a.navLogo {
+  margin: 10px; //change with sass
+  padding: 8px; //change with sass
+  font-family: 'Ubuntu';
+}
+
+.navLinks {
+  margin: 10px;
+  list-style-type: none;
+  display: inherit;
+}
+
+li {
+  padding: 8px;
+}

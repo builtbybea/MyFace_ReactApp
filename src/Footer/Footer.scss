@@ -1,0 +1,27 @@
+#footerContainer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: darkgrey;
+  color: white;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px; //change with sass
+  padding: 8px;
+}
+
+.footerLink {
+  margin: 10px; //change with sass
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
