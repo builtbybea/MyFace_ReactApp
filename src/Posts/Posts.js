@@ -3,8 +3,8 @@ import './Posts.scss';
 
 function Posts() {
     return (
-        <section>
-
+        <section id="mainTitle">
+            <h1>News Feed</h1>
         </section>
     );
 
