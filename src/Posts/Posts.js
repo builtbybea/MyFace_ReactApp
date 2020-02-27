@@ -31,11 +31,16 @@ function Posts() {
         );
 }
 
+
 function Post(props) {
     return (
-        <div>
+        <div className="userInfo">
+            <p>{props.data.postedBy.firstName}</p>
+            <img src= {props.data.imageUrl} />
             <p>{props.data.message}</p>
+            <p>{props.data.postedAt}</p>
         </div>
+        
     );
 }
 
