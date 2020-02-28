@@ -24,6 +24,7 @@ function App() {
                 <Create />
             </Route>
           </Switch>
+          
         <Footer />
       </Router>
     </body>

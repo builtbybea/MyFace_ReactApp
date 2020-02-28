@@ -11,7 +11,9 @@ function Header() {
             <nav id="navContainer">
                 <Link to="/" className="navLogo">MyFace</Link>
                 <ul className="navLinks">
-                    
+                    <li>
+                        <Link to="/create">Create</Link>
+                    </li>
                     <li>
                         <Link to="/posts">Posts</Link>
                     </li>
@@ -21,9 +23,7 @@ function Header() {
                     <li>
                         <Link to="/privacy">Privacy</Link>
                     </li>
-                    <li>
-                        <Link to="/create">Create</Link>
-                    </li>
+                    
                 </ul>
             </nav>
         </header>
