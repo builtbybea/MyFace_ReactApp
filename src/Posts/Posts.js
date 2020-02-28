@@ -37,30 +37,23 @@ function Posts() {
 
 function Post(props) {
     return (
-      
-            <div className="userPost">
-                <div className="imgDiv">
-                    <img className="postedImg" src= {props.data.imageUrl} />  
-                </div>
-               
-                <div className= "userMessage">
-                    <div className="userText">
-                        <p>{props.data.message}</p>
-                    </div>
-                       
-                    
-                    <div className="userInfo">
-                        <img className="userAvatar" src={props.data.postedBy.profileImageUrl}/>
-                        <div>
-                            <p className="userName">{props.data.postedBy.firstName}</p>
-                            <p className="postedAt">{moment(props.data.postedAt).format("MMM Do YY")}</p>
-                        </div>
-                    </div>
-                   
+
+        <div className="userPost">
+            <div className="userInfo">
+                <img className="userAvatar" src={props.data.postedBy.profileImageUrl}/>
+                <div>
+                    <p className="userName">{props.data.postedBy.firstName}</p>
                 </div>
             </div>
-       
-        
+
+            <div className="imgDiv">
+                <img className="postedImg" src={props.data.imageUrl}/>
+                <p className="userMessage">{props.data.message}</p>
+                <p className="postedAt">{moment(props.data.postedAt).format("MMM Do YY")}</p>
+            </div>
+        </div>
+
+
     );
 }
 
