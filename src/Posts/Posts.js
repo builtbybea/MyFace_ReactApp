@@ -27,6 +27,9 @@ function Posts() {
         
         return (
             <section>
+                <div className="buttonContainer">
+                    <button className="newButton">Create New Post</button> 
+                </div>
                  <ul className="userContainer">
                      {posts} 
                  </ul>
@@ -35,10 +38,11 @@ function Posts() {
 }
 
 
+
 function Post(props) {
     return (
-
         <div className="userPost">
+           
             <div className="userInfo">
                 <img className="userAvatar" src={props.data.postedBy.profileImageUrl}/>
                 <div>
@@ -57,4 +61,5 @@ function Post(props) {
     );
 }
 
-export {Posts};
+
+export {Posts}

@@ -1,4 +1,15 @@
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newButton {
+  display: flex;
+  justify-content: center;
+}
 .userContainer {
+  margin-top: 100px;
   list-style: none;
   display: flex;
   flex-flow: row wrap;

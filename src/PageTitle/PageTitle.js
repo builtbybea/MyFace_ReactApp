@@ -2,11 +2,11 @@
 import './PageTitle.scss';
 
 
-function PageTitle() {
+function PageTitle(props) {
     return (
         <section id="mainTitle">
-            <h1>News Feed</h1>
-            <button>Create New Post</button>
+            <h1>{props.title}</h1>
+            
         </section>
     );
     
